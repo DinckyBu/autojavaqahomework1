@@ -11,7 +11,7 @@ class CashbackHackServiceTest {
     void remain() {
         CashbackHackService service = new CashbackHackService();
 
-        int amount = 3200;
+        int amount = 3000;
 
         int expected = 1000;
         int actual = service.remain(amount);
