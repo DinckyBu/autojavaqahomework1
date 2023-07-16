@@ -28,4 +28,28 @@ public class CashbackHackServiceTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
+    @org.junit.Test
+    public void remainjunit4() {
+        CashbackHackService service = new CashbackHackService();
+
+        int amount = 1000;
+
+        int expected = 0;
+        int actual = service.remain(amount);
+
+        org.junit.Assert.assertEquals(expected, actual);
+    }
+
+    @org.junit.Test
+    public void remainCashbackjunit4() {
+        CashbackHackService service = new CashbackHackService();
+
+        int amount = 1200;
+
+        int expected = 800;
+        int actual = service.remain(amount);
+
+        org.junit.Assert.assertEquals(expected, actual);
+    }
 }
